@@ -8,7 +8,7 @@ interface DeviceRepository
 
 class MemoryRepository  implements DeviceRepository
 {
-    public array $devices = [];
+    private array $devices = [];
 
     function create(Device $device)
     {
